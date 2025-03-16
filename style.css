@@ -18,9 +18,24 @@
 }
 
 body {
+    background-image: url(public/ashes.png);
+    background-size: 10%;
+    animation: animate 120s linear infinite;
+    width: 100%;
+    height: 100%;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    100% {
+        background-position: 30% 80%;
+    }
 }
 
 #container-top {
@@ -61,10 +76,10 @@ body {
     align-items: center; 
     background: radial-gradient(#7a0000, #5a0000);
     border-radius: 50px; 
-    position: relative; 
-    top: 300px;
-    margin: 0 auto; 
-    max-width: 80%; 
+    position: relative;
+    top: 13em;
+    margin: 0 auto;
+    max-width: 50%;
     padding: 50px;
 }
 
@@ -75,10 +90,7 @@ body {
 }
 
 #loginForm {
-    padding: 10px 0px 10px 50px;
-    flex-flow: column wrap;
-    align-items: last baseline;
-    justify-content: center;
+    margin: 15px;
 }
 
 #loginForm label {
@@ -92,6 +104,7 @@ body {
 }
 
 #loginForm button {
+    margin: 20px 5px 0px 50px;
     padding: 15px 40px 15px 40px;
     border-radius: 10px;
 }
@@ -101,9 +114,10 @@ body {
     background-color: #ddd;
 }
 
-.products img {
-    width: 15%;
+img {
+    width: 25%;
     height: auto;
+    margin: 10%;
 }
 
 footer {
