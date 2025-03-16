@@ -55,13 +55,17 @@ body {
 }
 
 #container-center {
-    position: relative;
     display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center; 
     background: radial-gradient(#7a0000, #5a0000);
-    border-radius: 100px;
+    border-radius: 50px; 
+    position: relative; 
     top: 300px;
-    margin: 0px 35em 0px 35em;
-    padding: 100px;
+    margin: 0 auto; 
+    max-width: 80%; 
+    padding: 50px;
 }
 
 #container-center h1 {
