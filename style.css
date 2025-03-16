@@ -18,6 +18,7 @@
 }
 
 body {
+    overflow-x: hidden;
     display: flex;
     flex-direction: column;
 }
@@ -27,36 +28,50 @@ body {
     position: fixed;
     width: 100%;
     display: flex;
-    margin: 0;
-    padding: 1em;
+    margin: 0px;
+    padding: 0px;
     align-items: center;
-    justify-content: space-between;
-    z-index: 10;
+    justify-content: flex-end;
+    z-index: 1;
 }
 
 #container-top a {
-    padding: 1em;
+    padding: 2em;
     text-decoration: none;
     color: #fff;
 }
 
 #container-top h1 {
+    margin-left: 1em;
+    margin-right: auto;
     color: #fff;
     font-family: 'BrushScript';
-    font-size: 28px;
+    font-size: 64px;
 }
 
 #container-top a:hover {
-    background-color: #ffeadc;
+    background-color: #ddd;
     color: #000;
 }
 
-#loginForm {
+#container-center {
+    position: relative;
     display: flex;
     background: radial-gradient(#7a0000, #5a0000);
     border-radius: 100px;
-    margin: 15em 30em 15em 30em;
+    top: 300px;
+    margin: 0px 35em 0px 35em;
     padding: 100px;
+}
+
+#container-center h1 {
+    color: #fff;
+    font-family: 'BrushScript';
+    font-size: 72px;
+}
+
+#loginForm {
+    padding: 10px 0px 10px 50px;
     flex-flow: column wrap;
     align-items: last baseline;
     justify-content: center;
@@ -79,7 +94,7 @@ body {
 
 #loginForm button:hover {
     cursor: pointer;
-    background-color: #ffeadc;
+    background-color: #ddd;
 }
 
 .products img {
@@ -96,5 +111,5 @@ footer {
 #container-bottom {
     background: radial-gradient(#7a0000, #5a0000);
     padding: 1em;
-    z-index: 10;
+    z-index: 1;
 }
