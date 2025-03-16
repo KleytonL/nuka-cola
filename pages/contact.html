@@ -6,20 +6,55 @@
         <link rel="stylesheet" href="/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="shortcut icon" href="/public/nukaicon.png" type="image/x-icon">
-        <title>Nuka-Cola</title>
+        <title>Suporte Nuka-Cola</title>
     </head>
     <body>
         <div id="container-top">
-            <h1>Nuka-Cola</h1>
-            <a href="main.html"><i class="fa-solid fa-house"></i>Inicio</a>
-            <a href="products.html"><i class="fa-solid fa-cart-shopping"></i>Produtos</a>
-            <a href="contact.html"><i class="fa-solid fa-phone"></i>Contate-nos</a>
-            <a href="index.html"><i class="fa-solid fa-user"></i>User</a>
+            <h1>Nuka-Cola - Suporte</h1>
+            <nav>
+                <a href="main.html"><i class="fa-solid fa-house"></i> Início</a>
+                <a href="products.html"><i class="fa-solid fa-cart-shopping"></i> Produtos</a>
+                <a href="contact.html"><i class="fa-solid fa-phone"></i> Contate-nos</a>
+                <a href="index.html"><i class="fa-solid fa-user"></i> User</a>
+            </nav>
         </div>
+        
+        <div id="container-center">
+            <h1>SUPORTE 24 HORAS</h1>
+            <p>Precisa de ajuda? Entre em contato conosco através do formulário abaixo ou confira as perguntas frequentes.</p>
+            
+            <section id="faq">
+                <h2>FAQ - Perguntas Frequentes</h2>
+                <details>
+                    <summary>Onde posso comprar Nuka-Cola?</summary>
+                    <p>Você pode encontrar a Nuka-Cola em nossos revendedores autorizados ou em nosso site oficial.</p>
+                </details>
+                <details>
+                    <summary>A Nuka-Cola é segura para consumo?</summary>
+                    <p>Sim! A Nuka-Cola segue os mais altos padrões de qualidade e segurança.</p>
+                </details>
+            </section>
+            
+            <section id="contact-form">
+                <h2>Entre em contato</h2>
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+        </div>
+        
+        <footer>
+            <div id="container-bottom">
+                Projeto criado com intuito educativo | Nuka-Cola &copy; 2077
+            </div>
+        </footer>
     </body>
-    <footer>
-        <div id="container-bottom">
-            Projeto criado com intuito educativo
-        </div>
-    </footer>
 </html>
