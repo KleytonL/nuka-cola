@@ -49,6 +49,7 @@ body {
     justify-content: flex-end;
     z-index: 1;
 }
+
 #container-top a {
     padding: 2em;
     text-decoration: none;
@@ -62,10 +63,12 @@ body {
     font-family: 'BrushScript';
     font-size: 100px;
 }
+
 #container-top a:hover {
     background-color: #ddd;
     max-width: 100px
 }
+
 #container-center {
     display: flex;
     flex-wrap: wrap; 
@@ -79,41 +82,50 @@ body {
     max-width: 50%;
     padding: 50px;
 }
+
 #container-center h1 {
     color: #fff;
     font-family: 'BrushScript';
     font-size: 72px;
 }
+
 #loginForm {
     margin: 15px;
 }
+
 #loginForm label {
     font-family: 'BrushScript';
     font-size: 22px;
 }
+
 #loginForm input {
     padding: 15px;
     border-radius: 7px;
 }
+
 #loginForm button:hover {
     cursor: pointer;
     background-color: #ddd;
 }
+
 img {
     width: 25%;
     height: auto;
     margin: 10%;
 }
+
 footer {
     position: fixed;
     bottom: 0;
     width: 100%;
 }
+
 #container-bottom {
     background: radial-gradient(#7a0000, #5a0000);
     padding: 1em;
     z-index: 1;
 }
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -122,6 +134,7 @@ body {
     color: #fff;
     text-align: center;
 }
+
 #container-top {
     background: #b22222;
     padding: 15px;
@@ -130,21 +143,26 @@ body {
     align-items: center;
     flex-wrap: wrap;
 }
+
 #container-top h1 {
     margin: 0;
     font-size: 45px;
 }
+
 #container-center {
     padding: 20px;
 }
+
 h1, h2 {
     top: solid  ;
     color: #ffcc00;
 }
+
 label {
     display: block;
     margin-top: 10px;
 }
+
 input {
     width: 100%;
     padding: 10px;
@@ -154,6 +172,7 @@ input {
     background: #555;
     color: #fff;
 }
+
 button {
     width: 100%;
     padding: 10px;
