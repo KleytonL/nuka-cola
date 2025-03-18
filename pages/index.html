@@ -20,12 +20,12 @@
             </p>
             <form id="loginForm" action="main.html">
                 <label for="username">Nome:</label>
-                <input type="text" id="username" name="username" required>
+                <input type="text" id="username" name="username" value="" required>
                 <br>
                 <label for="vaultnumber">Vault:</label>
                 <input type="number" id="vaultnumber" name="vaultnumber" min="1" required>
                 <br>
-                <button id="btnLogin" type="submit">Entrar</button>
+                <button onclick="saveInput()" id="btnLogin">Entrar</button>
             </form>
         </div>
         
@@ -34,5 +34,6 @@
         <div id="container-bottom">
             Projeto criado com intuito educativo | Nuka-Cola &copy; 2077
         </div>
+        <script src="/scripts/events.js"></script>
     </footer>
 </html>
