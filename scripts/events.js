@@ -1,5 +1,5 @@
-const slides = document.querySelectorAll('.slides img');
-let imgIndex = 0;
+const slides = document.querySelectorAll('.slides li');
+let slideIndex = 0;
 
 function saveInput() {
     const input = document.getElementById('username');
@@ -23,11 +23,11 @@ document.addEventListener("DOMContentLoaded", initSlide);
 
 function initSlide() {
     if(slides.length > 0) {
-        slides[imgIndex].classList.add("displaySlide");
+        slides[slideIndex].classList.add("displaySlide");
     }
 }
 
-function showSlide(index) {
+function showSlide() {
     slides.forEach(slide => {
         slide.classList.remove("displaySlide");
     });
@@ -35,21 +35,21 @@ function showSlide(index) {
 }
 
 function nextSlide() {
-    imgIndex++;
+    slideIndex++;
 
-    if(imgIndex >= slides.length) {
-        imgIndex = 0;
+    if(slideIndex >= slides.length) {
+        slideIndex = 0;
     }
 
-    showSlide(imgIndex);
+    showSlide();
 }
 
 function prevSlide() {
-    imgIndex--;
+    slideIndex--;
 
-    if(imgIndex < 0) {
-        imgIndex = slides.length - 1;
+    if(slideIndex < 0) {
+        slideIndex = slides.length - 1;
     }
     
-    showSlide(imgIndex);
+    showSlide(slideIndex);
 }
