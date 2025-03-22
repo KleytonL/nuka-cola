@@ -2,18 +2,23 @@ const slides = document.querySelectorAll('.slides li');
 let slideIndex = 0;
 
 function saveInput() {
-    const input = document.getElementById('username');
-    sessionStorage.setItem("user", input.value);
-    console.log(input.value);
+    const inputName = document.getElementById('username');
+    const inputVault = document.getElementById('vaultnumber');
+    sessionStorage.setItem("user", inputName.value);
+    sessionStorage.setItem("vault", inputVault.value);
+    console.log(inputName.value);
+    console.log(inputVault.value);
 }
 
 function printInput() {
     const storedName = sessionStorage.getItem('user');
+    const storedVault = sessionStorage.getItem('vault');
     var title = document.getElementById('helloUser');
     if(window.location.pathname === '/pages/main.html') {
         title.innerText += " " + storedName + "!";
     } else {
         console.log(storedName);
+        console.log(storedVault);
     }
 }
 
