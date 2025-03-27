@@ -14,8 +14,13 @@ function printInput() {
     const storedName = sessionStorage.getItem('user');
     const storedVault = sessionStorage.getItem('vault');
     var title = document.getElementById('helloUser');
+    var name = document.getElementById('username');
+    var vault = document.getElementById('uservault');
     if(window.location.pathname === '/pages/main.html') {
         title.innerText += " " + storedName + "!";
+    } else if(window.location.pathname === '/pages/user.html') {
+        name.innerText += " " + storedName + "!";
+        vault.innerText += " " + storedVault + "!";
     } else {
         console.log(storedName);
         console.log(storedVault);

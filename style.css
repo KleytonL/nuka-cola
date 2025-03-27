@@ -11,7 +11,7 @@
 }
 
 :root {
-    background: radial-gradient(#222, #000);
+    background: radial-gradient(#333, #000);
     margin: 0;
     width: 100%;
     height: 100%;
@@ -108,6 +108,18 @@ body {
     height: auto;
 }
 
+#container-center .userInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+#container-center .userInfo img {
+    width: 35%;
+    height: auto;
+}
+
 #loginForm {
     margin: 15px;
 }
@@ -159,12 +171,12 @@ body {
     right: 1em;
 }
 
-li {
+.slides li {
     list-style: none;
     display: none;
 }
 
-li.displaySlide {
+.slides li.displaySlide {
     display: grid;
     grid-template-areas: 
     "a a a a b"
